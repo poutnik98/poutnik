@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEOWY - Kočičí ráj</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0e6f6;
+            color: #333;
+        }
+        header {
+            background-color: #8e44ad;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header::after {
+            content: "🐾";
+            font-size: 2em;
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        nav {
+            background-color: #9b59b6;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #8e44ad;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .main-content {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .cat-services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .service {
+            background-color: #e8daef;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .service:hover {
+            transform: scale(1.05);
+        }
+        .service h3 {
+            margin-top: 0;
+        }
+        .hero-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .gallery-image {
+            width: 30%;
+            border-radius: 10px;
+        }
+        .cat-facts {
+            background-color: #e8daef;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .cat-facts h3 {
+            color: #8e44ad;
+        }
+        .cat-care-tips {
+            margin-top: 20px;
+        }
+        .cat-care-tips ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .cat-care-tips li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .cat-care-tips li::before {
+            content: "🐾";
+            position: absolute;
+            left: 0;
+        }
+        footer {
+            background-color: #8e44ad;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MEOWY</h1>
+        <p>Váš kočičí ráj</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#domu">Domů</a></li>
+            <li><a href="#sluzby">Služby</a></li>
+            <li><a href="#produkty">Produkty</a></li>
+            <li><a href="#o-nas">O nás</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <img src="https://source.unsplash.com/1600x900/?cat" alt="Roztomilá kočka" class="hero-image">
+            
+            <h2>Vítejte v MEOWY</h2>
+            <p>MEOWY je místo, kde se sny každé kočky stávají skutečností. Nabízíme vše, co vaši chlupatí společníci potřebují pro šťastný a zdravý život. Naším posláním je zajistit, aby každá kočka měla to nejlepší - od výživy až po zábavu.</p>
+            
+            <h3>Proč MEOWY?</h3>
+            <p>V MEOWY rozumíme jedinečným potřebám koček a jejich majitelů. Naše produkty jsou pečlivě vybírány s ohledem na kvalitu, bezpečnost a radost, kterou přinesou vašim mazlíčkům. S více než 10 lety zkušeností v péči o kočky jsme se stali důvěryhodným partnerem pro tisíce spokojených zákazníků.</p>
+
+            <h3>Naše služby</h3>
+            <div class="cat-services">
+                <div class="service">
+                    <h3>Prémiové krmivo</h3>
+                    <p>Nabízíme širokou škálu vysoce kvalitních krmiv pro všechny věkové kategorie a speciální potřeby.</p>
+                </div>
+                <div class="service">
+                    <h3>Interaktivní hračky</h3>
+                    <p>Stimulující hračky pro mentální a fyzickou aktivitu vašeho kočičího společníka.</p>
+                </div>
+                <div class="service">
+                    <h3>Wellness a péče</h3>
+                    <p>Od kartáčů po šampony - vše pro perfektní péči o srst a celkové zdraví vaší kočky.</p>
+                </div>
+                <div class="service">
+                    <h3>Odborné poradenství</h3>
+                    <p>Náš tým expertů je připraven zodpovědět všechny vaše otázky o péči, výživě a chování koček.</p>
+                </div>
+            </div>
+
+            <h3>Galerie spokojených zákazníků</h3>
+            <div class="image-gallery">
+                <img src="https://source.unsplash.com/300x300/?cat,playing" alt="Kočka si hraje" class="gallery-image">
+                <img src="https://source.unsplash.com/300x300/?cat,sleeping" alt="Kočka spí" class="gallery-image">
+                <img src="https://source.unsplash.com/300x300/?cat,eating" alt="Kočka jí" class="gallery-image">
+            </div>
+
+            <div class="cat-facts">
+                <h3>Zajímavosti o kočkách</h3>
+                <p>Kočky jsou fascinující stvoření, která si získala srdce milionů lidí po celém světě. Zde je několik zajímavostí, které možná o našich chlupatých přátelích nevíte:</p>
+                <ul>
+                    <li>Kočky tráví až 70% svého života spánkem.</li>
+                    <li>Kočičí čich je 14krát silnější než lidský.</li>
+                    <li>Kočky mají 32 svalů v každém uchu, což jim umožňuje otáčet ušima o 180 stupňů.</li>
+                    <li>První kočka ve vesmíru se jmenovala Félicette a letěla v roce 1963.</li>
+                    <li>Kočky nemohou cítit sladkou chuť kvůli genetické mutaci.</li>
+                </ul>
+            </div>
+
+            <div class="cat-care-tips">
+                <h3>Tipy pro péči o kočku</h3>
+                <p>Péče o kočku může být radostí, pokud víte, jak na to. Zde je několik základních tipů pro šťastný a zdravý život vaší kočičky:</p>
+                <ul>
+                    <li>Poskytujte kvalitní a vyváženou stravu odpovídající věku a zdravotnímu stavu vaší kočky.</li>
+                    <li>Zajistěte pravidelné návštěvy u veterináře pro kontroly a očkování.</li>
+                    <li>Dopřejte kočce dostatek mentální stimulace pomocí hraček a her.</li>
+                    <li>Udržujte kočičí toaletu čistou a na klidném místě.</li>
+                    <li>Věnujte čas každodennímu mazlení a interakci s vaší kočkou pro posílení vzájemného pouta.</li>
+                </ul>
+            </div>
+
+            <h3>Kočičí komunikace</h3>
+            <p>Kočky komunikují různými způsoby, nejen mňoukáním. Pochopení kočičí řeči těla vám pomůže lépe porozumět vašemu mazlíčkovi:</p>
+            <ul>
+                <li><strong>Předení:</strong> Obvykle znamená spokojenost, ale může také signalizovat bolest nebo úzkost.</li>
+                <li><strong>Mrkání:</strong> Pomalé mrkání je kočičí způsob, jak vyjádřit náklonnost.</li>
+                <li><strong>Ocas:</strong> Vztyčený ocas značí přátelský pozdrav, zatímco švihání ocasem může znamenat podráždění.</li>
+                <li><strong>Uši:</strong> Uši směřující dopředu naznačují zájem, zatímco sklopené uši mohou signalizovat strach nebo agresi.</li>
+            </ul>
+
+            <h3>Proč adoptovat kočku?</h3>
+            <p>Adopce kočky může přinést mnoho radosti do vašeho života. Zde jsou některé důvody, proč zvážit adopci:</p>
+            <ul>
+                <li>Kočky jsou skvělými společníky a mohou pomoci snížit stres a úzkost.</li>
+                <li>Jsou relativně nenáročné na péči, což je ideální pro zaneprázdněné majitele.</li>
+                <li>Adopcí zachráníte život a poskytnete domov potřebné kočce.</li>
+                <li>Kočky jsou přirozeně čistotné a snadno se učí používat kočičí toaletu.</li>
+                <li>Jejich přítomnost může pomoci kontrolovat hlodavce ve vašem domě.</li>
+            </ul>
+
+            <h3>Navštivte nás</h3>
+            <p>Přijďte do našeho obchodu a objevte svět MEOWY. Naši přátelští zaměstnanci vám rádi pomohou najít to nejlepší pro vašeho kočičího přítele. Těšíme se na vaši návštěvu!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MEOWY. S láskou ke kočkám.</p>
+    </footer>
+</body>
+</html>
